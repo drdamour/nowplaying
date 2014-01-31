@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<WinampAbstractionLayer version="0.7">
+
+
+<groupdef id="NowPlaying.Main.About" name="Help/About">
+	<browser id="About.Browser" x="0" y="0" w="0" h="0" relatw="1" relath="1" url="http://www.msu.edu/~damour/NowPlaying/index.html" />
+</groupdef>
+
+<groupdef id="HistSlider">
+	<Wasabi:HSlider id="Config.history" x="0" y="0" w="0" h="15" relatw="1" low="1" high="100" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};GENERAL HISTORY" />   
+</groupdef>
+
+<groupdef id="NowPlaying.Main.General.Frequency">
+	<Wasabi:HSlider id="Config.Generalfrequency" x="0" y="0" w="0" h="15" relatw="1" low="1" high="100" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};GENERAL UPDATE" />   
+</groupdef>
+
+<groupdef id="NowPlaying.Main.FTP.UPDATE">
+	<Wasabi:HSlider id="Config.updatefrequency" x="0" y="0" w="295" h="15"  low="1" high="100" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FTP UPDATE" />   
+</groupdef>
+
+
+<groupdef id="NowPlaying.Main.Options.Song">
+	<Wasabi:CheckBox  id="SongInfo.artist"  x="0" y="0"   text="Artist  [%A]"      cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};SONG ARTIST"/>
+	<Wasabi:CheckBox  id="SongInfo.title"   x="0" y="18"  text="Title   [%T]"      cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};SONG TITLE"/>
+	<Wasabi:CheckBox  id="SongInfo.album"   x="0" y="36"  text="Album   [%a]"      cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};SONG ALBUM"/>
+	<Wasabi:CheckBox  id="SongInfo.genre"   x="0" y="54"  text="Genre   [%G]"      cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};SONG GENRE"/>
+	<Wasabi:CheckBox  id="SongInfo.year"    x="0" y="72"  text="Year    [%Y]"      cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};SONG YEAR"/>
+	<Wasabi:CheckBox  id="SongInfo.comment" x="0" y="90"  text="Comment [%C]"      cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};SONG COMMENT"/>
+	<Wasabi:CheckBox  id="SongInfo.track"   x="0" y="108" text="Track   [%t]"      cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};SONG TRACK"/>
+	<Wasabi:CheckBox  id="SongInfo.length"  x="0" y="126" text="Song Length [%L]"  cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};SONG LENGTH"/>
+</groupdef>
+
+
+<groupdef id="NowPlaying.Main.Options.File">
+	<Wasabi:CheckBox  id="FileInfo.relative" x="0"  y="0"  text="Relative File  [%F]" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FILE RELATIVE"/>
+	<Wasabi:CheckBox  id="FileInfo.size"     x="0"  y="18" text="File Size   [%S]"    cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FILE SIZE"/>
+	<Wasabi:CheckBox  id="FileInfo.Kbps"     x="0"  y="36" text="Kbps [%K]"           cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FILE KBPS"/>
+	<!--<Wasabi:CheckBox  id="FileInfo.Chan"     x="0"  y="54" text="Channels [%c]"       cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FILE CHANNELS"/>!-->
+	<Wasabi:CheckBox  id="FileInfo.Freq"     x="0"  y="72" text="Frequency [%f]"      cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FILE FREQUENCY"/>
+	<Wasabi:CheckBox  id="FileInfo.quality"  x="0" y="90" text="Quality [%Q]"        cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FILE QUALITY"/>
+</groupdef>
+
+<groupdef id="NowPlaying.Main.Options.Winamp">
+	<Wasabi:CheckBox  id="WinampInfo.PLSize"    x="0" y="0"  text="Playlist Size   [%P]" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};WINAMP PLSIZE"/>
+	<Wasabi:CheckBox  id="WinampInfo.Position"  x="0" y="18" text="Position   [%p]"      cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};WINAMP POSITION"/>
+	<Wasabi:CheckBox  id="WinampInfo.Version"   x="0" y="36" text="Version   [%V]"       cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};WINAMP VERSION"/>
+	<Wasabi:CheckBox  id="WinampInfo.History"   x="0" y="54" text="History   [%H]"       cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};WINAMP HISTORY"/>
+
+</groupdef>
+
+
+
+
+<groupdef id="NowPlaying.Main.General" name="General">
+	<Wasabi:CheckBox id="General.Enable"  x="3"   y="0" text="Enable NowPlaying"   cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};GENERAL ENABLED"/>
+
+	<Wasabi:TitleBox x="0" y="15" w="0" h="34" relatw="1" id="General.history" title="Display Last " content="HistSlider" />
+	<script file="../../xml/winamp/scripts/titleboxslidercb.maki" param="General.history;slider.button;; Items" />
+
+	<Wasabi:TitleBox x="0" y="50" w="0" h="34" relatw="1" id="General.frequency" title="Update Output Every " content="NowPlaying.Main.General.Frequency" />
+	<script file="../../xml/winamp/scripts/titleboxslidercb.maki" param="General.frequency;slider.button;; Title Changes" />
+
+	<Wasabi:Text  x="3"   y="92" w="77" h="16" relath="1" text="Output File:"/>
+    <Wasabi:EditBox  id="General.Path"  x="80" y="90" w="300" h="18"         cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};GENERAL FILE" />
+    
+	<Wasabi:Text  x="3"  y="117" w="77" h="18" relath="1" text="Path to MP3's:"/>
+    <Wasabi:PathPicker id="General.mp3path" x="80" y="115" w="300" h="18"    cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};GENERAL PATH" />
+
+	<Wasabi:CheckBox id="General.Stay"  x="80"   y="136" text="Stay in this Directory"   cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};GENERAL STAY"/>
+	<Wasabi:CheckBox id="General.Single"  x="80"   y="154" text="Use HTML Escape for Single Quotes"   cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};GENERAL SINGLEQ"/>
+
+</groupdef>
+
+<groupdef id="NowPlaying.Main.FTP" name="FTP">
+	<Wasabi:CheckBox taborder="1" id="FTP.Enable"  x="3"   y="0" text="Enable FTP"   cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FTP ENABLED"/>
+    
+    <Wasabi:CheckBox taborder="2" id="FTP.MT.Enable"  x="100"   y="0" text="Enable Multi-Threading"  cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FTP MT"/>
+    
+    <Wasabi:Text x="3" y="22" w="60" h="18" relath="1" text="Server:"/>
+    <Wasabi:EditBox  taborder="3" id="FTP.Server" x="60" y="20" w="200" h="18" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FTP SERVER" />
+
+    <Wasabi:Text x="262" y="22" w="28" h="18" relath="1" text="Port:"/>
+    <Wasabi:EditBox  taborder="4" id="FTP.Port" x="290" y="20" w="20" h="18" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FTP PORT" />
+
+	
+	<Wasabi:Text x="3" y="42" w="60" h="18" relath="1" text="Logon:"/>
+    <Wasabi:EditBox  taborder="5" id="FTP.Logon" x="60" y="40" w="250" h="18" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FTP LOGON" />
+
+	<Wasabi:Text x="3" y="62" w="60" h="18" relath="1" text="Password:"/>
+    <Wasabi:EditBox  taborder="6" id="FTP.Password" x="60" y="60" w="250" h="18" password="1" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FTP PASSWORD" />
+
+	<Wasabi:Text x="3" y="82" w="60" h="18" relath="1" text="Directory:"/>
+    <Wasabi:EditBox  taborder="7" id="FTP.Directory" x="60" y="80" w="250" h="18" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FTP DIRECTORY" />
+    
+	<Wasabi:Text x="3" y="102" w="60" h="18" relath="1" text="Filename:"/>
+    <Wasabi:EditBox  taborder="8" id="FTP.Filename" x="60" y="100" w="250" h="18" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};FTP FILENAME" />
+    
+	<Wasabi:TitleBox taborder="9" x="3" y="125" w="307" h="34"  id="FTP.Update" title="Upload File Every " content="NowPlaying.Main.FTP.UPDATE" />
+	<script file="../../xml/winamp/scripts/titleboxslidercb.maki" param="FTP.Update;slider.button;; Title Changes" />
+
+	
+
+</groupdef>
+
+<groupdef id="NowPlaying.Main.Command" name="Command">
+	<Wasabi:CheckBox taborder="1" id="Command.Enable"  x="3"   y="0" text="Enable Command"   cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};COMMAND ENABLED"/>
+    
+    <Wasabi:Text x="3" y="21" w="70" h="18" relath="1" text="Command:"/>
+    <Wasabi:EditBox  taborder="2" id="Command.Path" x="70" y="20" w="300" h="18" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};COMMAND PATH" />
+
+    <Wasabi:Text x="3" y="41" w="70" h="18" relath="1" text="Arguements:"/>
+    <Wasabi:EditBox  taborder="3" id="Command.Args" x="70" y="40" w="300" h="18" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};COMMAND ARGUEMENTS" />
+
+	<Wasabi:CheckBox taborder="1" id="Command.Hidden"  x="3"   y="60" text="Hide Output"   cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};COMMAND HIDDEN"/>
+
+</groupdef>
+
+<groupdef id="NowPlaying.Main.Template" name="Template">
+	<Wasabi:CheckBox taborder="1" id="Template.Enable"  x="3"   y="0" text="Enable Template"   cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};TEMPLATE ENABLED"/>
+
+    <Wasabi:Text x="3" y="23" w="50" h="18" relath="1" text="Header:"/>
+	<Wasabi:EditBox  id="Template.Header" x="50" y="20"  w="305" h="20" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};TEMPLATE HEADER"/>
+
+    <Wasabi:Text x="3" y="43" w="50" h="18" relath="1" text="Data:"/>
+	<Wasabi:EditBox  id="Template.Data" x="50" y="40"  w="305" h="20" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};TEMPLATE DATA"/>
+
+    <Wasabi:Text x="3" y="63" w="50" h="18" relath="1" text="Footer:"/>
+	<Wasabi:EditBox  id="Template.Footer" x="50" y="60"  w="305" h="20" cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};TEMPLATE FOOTER"/>
+
+	<Wasabi:CheckBox taborder="5" id="Header.Parse"  x="50"   y="80" text="Parse Header"   cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};TEMPLATE HPARSE"/>
+	<Wasabi:CheckBox taborder="6" id="Footer.Parse"  x="130"   y="80" text="Parse Footer"   cfgattrib="{3C59C05C-723F-49db-BCC4-757D2DEE8AEE};TEMPLATE FPARSE"/>
+
+</groupdef>
+
+<groupdef id="NowPlaying.Main.Options" name="Output">
+    <Wasabi:TitleBox x="1" y="0" w="118" h="230"   title="Song Options"   content="NowPlaying.Main.Options.Song" />
+    <Wasabi:TitleBox x="118" y="0" w="130" h="230" title="File Options"   content="NowPlaying.Main.Options.File" />
+    <Wasabi:TitleBox x="247" y="0" w="130" h="230" title="Winamp Options" content="NowPlaying.Main.Options.Winamp" />
+</groupdef>
+
+
+
+
+<groupdef id="NowPlaying.Main">
+  <Wasabi:TabSheet x="0" y="0" w="0" relatw="1" h="0" relath="1" 
+		children="NowPlaying.Main.General;NowPlaying.Main.Options;NowPlaying.Main.Template;NowPlaying.Main.FTP;NowPlaying.Main.Command;NowPlaying.Main.About"
+		windowtype="damour" />
+</groupdef>
+
+
+</WinampAbstractionLayer>
+

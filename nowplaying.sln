@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nowplaying", "..\..\..\..\..\Wasabi SDK\studio\Examples\Example1\example1.vcproj", "{7CC9B09C-87A5-49C6-BC12-78549D2477C2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bfc", "..\..\..\..\..\Wasabi SDK\studio\bfc.vcproj", "{9F57650B-3E24-4E88-8EAA-B8030F0F4099}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "waclient", "..\..\..\..\..\Wasabi SDK\studio\waclient\waclient.vcproj", "{532E9774-55AC-4404-8DB8-E2149E68130E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ftp", "ftp\ftp.vcproj", "{8EE0D291-9650-46A3-828E-6280ADADE61A}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{7CC9B09C-87A5-49C6-BC12-78549D2477C2}.0 = {532E9774-55AC-4404-8DB8-E2149E68130E}
+		{7CC9B09C-87A5-49C6-BC12-78549D2477C2}.1 = {9F57650B-3E24-4E88-8EAA-B8030F0F4099}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7CC9B09C-87A5-49C6-BC12-78549D2477C2}.Debug.ActiveCfg = Debug|Win32
+		{7CC9B09C-87A5-49C6-BC12-78549D2477C2}.Debug.Build.0 = Debug|Win32
+		{7CC9B09C-87A5-49C6-BC12-78549D2477C2}.Release.ActiveCfg = Release|Win32
+		{7CC9B09C-87A5-49C6-BC12-78549D2477C2}.Release.Build.0 = Release|Win32
+		{9F57650B-3E24-4E88-8EAA-B8030F0F4099}.Debug.ActiveCfg = Debug|Win32
+		{9F57650B-3E24-4E88-8EAA-B8030F0F4099}.Debug.Build.0 = Debug|Win32
+		{9F57650B-3E24-4E88-8EAA-B8030F0F4099}.Release.ActiveCfg = Release|Win32
+		{9F57650B-3E24-4E88-8EAA-B8030F0F4099}.Release.Build.0 = Release|Win32
+		{532E9774-55AC-4404-8DB8-E2149E68130E}.Debug.ActiveCfg = Debug|Win32
+		{532E9774-55AC-4404-8DB8-E2149E68130E}.Debug.Build.0 = Debug|Win32
+		{532E9774-55AC-4404-8DB8-E2149E68130E}.Release.ActiveCfg = Release|Win32
+		{532E9774-55AC-4404-8DB8-E2149E68130E}.Release.Build.0 = Release|Win32
+		{8EE0D291-9650-46A3-828E-6280ADADE61A}.Debug.ActiveCfg = Debug|Win32
+		{8EE0D291-9650-46A3-828E-6280ADADE61A}.Debug.Build.0 = Debug|Win32
+		{8EE0D291-9650-46A3-828E-6280ADADE61A}.Release.ActiveCfg = Release|Win32
+		{8EE0D291-9650-46A3-828E-6280ADADE61A}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
